@@ -95,7 +95,7 @@ export default function ListView() {
       <div className="flex justify-between text-sm py-3">
         <Button
           isDisabled={isLoading || lastSnapDocList?.length === 0}
-          onClick={handlePrePage}
+          onPress={handlePrePage}
           size="sm"
           variant="bordered"
         >
@@ -116,7 +116,7 @@ export default function ListView() {
         </select>
         <Button
           isDisabled={isLoading || products?.length === 0}
-          onClick={handleNextPage}
+          onPress={handleNextPage}
           size="sm"
           variant="bordered"
         >
@@ -197,7 +197,7 @@ function Row({ item, index }) {
       <td className="border-y bg-white px-3 py-2 border-r rounded-r-lg">
         <div className="flex gap-2 items-center">
           <Button
-            onClick={handleUpdate}
+            onPress={handleUpdate}
             isDisabled={isDeleting}
             isIconOnly
             size="sm"
@@ -205,7 +205,7 @@ function Row({ item, index }) {
             <Edit2 size={13} />
           </Button>
           <Button
-            onClick={handleDelete}
+            onPress={handleDelete}
             isLoading={isDeleting}
             isDisabled={isDeleting}
             isIconOnly
