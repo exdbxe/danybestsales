@@ -1,9 +1,9 @@
 "use client";
 
-import { useAuth } from "../../../contexts/AuthContext";
-import { useProduct } from "../../../lib/firestore/products/read";
-import { useUser } from "../../../lib/firestore/user/read";
-import { updateCarts } from "../../../lib/firestore/user/write";
+import { useAuth } from "@/../contexts/AuthContext";
+import { useProduct } from "@/../lib/firestore/products/read";
+import { useUser } from "@/../lib/firestore/user/read";
+import { updateCarts } from "@/../lib/firestore/user/write";
 import { Button, CircularProgress } from "@nextui-org/react";
 import { Minus, Plus, X } from "lucide-react";
 import Link from "next/link";
@@ -101,9 +101,9 @@ function ProductItem({ item }) {
       <div className="flex flex-col gap-1 w-full">
         <h1 className="text-sm font-semibold">{product?.title}</h1>
         <h1 className="text-green-500 text-sm">
-          ₹ {product?.salePrice}{" "}
+          $ {product?.salePrice}{" "}
           <span className="line-through text-xs text-gray-500">
-            ₹ {product?.price}
+            $ {product?.price}
           </span>
         </h1>
         <div className="flex text-xs items-center gap-2">

@@ -1,9 +1,9 @@
 "use client";
 
-import { ProductCard } from "../../../app/components/Products";
-import { useAuth } from "../../../contexts/AuthContext";
-import { useProduct } from "../../..//lib/firestore/products/read";
-import { useUser } from "../../../lib/firestore/user/read";
+import { ProductCard } from "@/../app/components/Products";
+import { useAuth } from "@/../contexts/AuthContext";
+import { useProduct } from "@/../lib/firestore/products/read";
+import { useUser } from "@/../lib/firestore/user/read";
 import { CircularProgress } from "@nextui-org/react";
 
 export default function Page() {

@@ -1,7 +1,7 @@
 "use client";
 
-import { useAuth } from "../../../contexts/AuthContext";
-import { useUser } from "../../../lib/firestore/user/read";
+import { useAuth } from "@/../contexts/AuthContext";
+import { useUser } from "@/../lib/firestore/user/read";
 import { CircularProgress } from "@nextui-org/react";
 import { useSearchParams } from "next/navigation";
 

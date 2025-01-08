@@ -1,7 +1,7 @@
 "use client";
 
-import { useAuth } from "../../../contexts/AuthContext";
-import { useOrders } from "../../../lib/firestore/orders/read";
+import { useAuth } from "@/../contexts/AuthContext";
+import { useOrders } from "@/../lib/firestore/orders/read";
 import { CircularProgress } from "@nextui-org/react";
 
 export default function Page() {
@@ -73,7 +73,7 @@ export default function Page() {
                           {product?.price_data?.product_data?.name}
                         </h1>
                         <h1 className="text-gray-500 text-xs">
-                          ₹ {product?.price_data?.unit_amount / 100}{" "}
+                          $ {product?.price_data?.unit_amount / 100}{" "}
                           <span>X</span>{" "}
                           <span>{product?.quantity?.toString()}</span>
                         </h1>

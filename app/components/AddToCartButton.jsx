@@ -6,8 +6,9 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { useAuth } from "@/../contexts/AuthContext";
 import { useUser } from "@/../lib/firestore/user/read";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { updateCarts } from "@/../lib/firestore/user/write";
+import { Button } from "@mui/material";
 
 export default function AddToCartButton({ productId, type }) {
   const { user } = useAuth();
