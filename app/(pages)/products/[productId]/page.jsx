@@ -3,7 +3,7 @@ import Photos from "./components/Photos";
 import Details from "./components/Details";
 import Reviews from "./components/Reviews";
 import RelatedProducts from "./components/RelatedProducts";
-import AddReview from "./components/AddReiveiw";
+import AddReview from "./components/AddReview";
 import AuthContextProvider from "@/../contexts/AuthContext";
 
 export async function generateMetadata({ params }) {
