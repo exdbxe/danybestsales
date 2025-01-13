@@ -42,9 +42,9 @@ export default function FavoriteButton({ productId }) {
 
   return (
     <Button
-      isLoading={isLoading}
+      isloading={isLoading}
       isDisabled={isLoading}
-      onClick={handlClick}
+      onPress={handlClick}
       variant="light"
       color="danger"
       className="rounded-full"

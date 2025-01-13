@@ -43,7 +43,7 @@ export default function AddToCartButton({ productId, type }) {
   if (type === "cute") {
     return (
       <Button
-        isLoading={isLoading}
+        isloading={isLoading}
         isDisabled={isLoading}
         onClick={handlClick}
         variant="bordered"
@@ -58,7 +58,7 @@ export default function AddToCartButton({ productId, type }) {
   if (type === "large") {
     return (
       <Button
-        isLoading={isLoading}
+        isloading={isLoading}
         isDisabled={isLoading}
         onClick={handlClick}
         variant="bordered"
@@ -76,7 +76,7 @@ export default function AddToCartButton({ productId, type }) {
 
   return (
     <Button
-      isLoading={isLoading}
+      isloading={isLoading}
       isDisabled={isLoading}
       onClick={handlClick}
       variant="flat"
@@ -88,3 +88,4 @@ export default function AddToCartButton({ productId, type }) {
     </Button>
   );
 }
+  

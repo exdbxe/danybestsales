@@ -12,7 +12,9 @@ export default function AdminButton() {
   }
   return (
     <Link href={"/admin"}>
-      <button className="text-xs font-semibold">Admin</button>
+      <button isLoading={true} className="text-xs font-semibold">
+        Admin
+      </button>
     </Link>
   );
 }
